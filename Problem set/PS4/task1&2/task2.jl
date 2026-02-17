@@ -155,7 +155,7 @@ function run_problem2_analysis(γ_select=2.0, method_select=:standard)
     pol_c, pol_a, a_grid, z_nodes, P = sol.pol_c, sol.pol_a, sol.a_grid, sol.z_nodes, sol.P
     
     # Part A: Individual MPCs
-    println("\n[Part A] Computing Individual MPCs...")
+    println("\n[Part A] Computing Individual MPCs")
     transfer_sizes = [0.01, 0.1, 0.5, 1.0, 2.0]
     MPCs = compute_mpc_grid(pol_c, a_grid, transfer_sizes)
     
